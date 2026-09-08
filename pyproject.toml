@@ -152,7 +152,7 @@ docs = [
     # cp314 wheels start at lxml 6.0.1.
     "lxml>=6.0.1,<7 ; python_version >= '3.14'",
     "unstructured[csv, doc, docx, epub, md, odt, org, ppt, pptx, rst, rtf, tsv, xlsx, pdf]>=0.18.1,<19",
-    "nltk>=3.9.3,<4", # TODO: Remove when unstructured is above v0.21.0 as it won't use nltk anymore
+    "nltk>=3.10.3,<4", # Keep above CVE-2026-79675 fixed version
 ]
 codegraph = [
     "fastembed<=0.8.0 ; python_version < '3.14'",
