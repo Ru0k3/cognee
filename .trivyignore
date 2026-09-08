@@ -1,0 +1,6 @@
+# Temporary exception: CVE-2026-71428 is reported against unstructured 0.18.x.
+# The fixed unstructured releases require lxml>=5, but Cognee's current
+# Python<3.13 dependency markers require lxml<5; forcing the upgrade makes
+# the MCP lock unsatisfiable. Remove this exception after Cognee updates its
+# docs-extra compatibility matrix and the package is upgraded in uv.lock.
+CVE-2026-71428
